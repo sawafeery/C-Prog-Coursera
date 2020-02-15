@@ -1,4 +1,1 @@
-I'd love to eat an apple right now
-
-
-
+one line containing "apple", assignment
