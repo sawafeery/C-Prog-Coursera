@@ -54,9 +54,9 @@ void squares(int size1, int x_offset, int y_offset, int size2) {
       h = y_offset + size2;
     }
   //count from 0 to h. Call the number you count with y
-  for (int y = 0; y <= h; y++) {
+  for (int y = 0; y <= h; ++y) {
     //count from 0 to w. Call the number you count with x
-      for (int x = 0; x <= w; x++) {	
+      for (int x = 0; x < w; x++) {	
       //check if  EITHER
       //    ((x is between x_offset  and x_offset +size2) AND 
       
@@ -91,7 +91,8 @@ void squares(int size1, int x_offset, int y_offset, int size2) {
 	    {
 	      printf(" ");	    
 	    }
-    //when you finish counting x from 0 to w, 
+	//printf ("\n");
+	//when you finish counting x from 0 to w, 
     //print a newline
       } // bracket to end for (0 thru w)
       printf ("\n");
